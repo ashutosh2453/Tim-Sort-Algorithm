@@ -1,0 +1,19 @@
+TimSort(A)
+
+1. n = length(A)
+
+2. minRun = findMinRun(n)
+
+3. Divide array into runs of size minRun
+
+4. For each run
+      apply InsertionSort(run)
+
+5. While number of runs > 1
+      merge adjacent runs using MergeSort
+
+6. Continue merging until one sorted array remains
+
+7. Return sorted array A
+
+8. End
